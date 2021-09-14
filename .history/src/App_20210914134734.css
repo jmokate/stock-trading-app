@@ -1,0 +1,8 @@
+body {
+	background: url("./images/bull.jpg");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	text-align: right;
+}

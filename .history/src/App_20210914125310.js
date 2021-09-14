@@ -1,10 +1,10 @@
 import './App.css';
-import SplashPage from './SplashPage.js';
+import Home from './Home.js';
 
 function App() {
   return (
     <div>
-      <SplashPage />
+      <Home />
     </div>
   );
 }

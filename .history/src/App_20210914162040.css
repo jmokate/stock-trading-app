@@ -1,0 +1,21 @@
+/* body {
+	background: url("./images/bull.jpg");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+} */
+
+/* .landing-text {
+	text-align: center;
+	margin-left: 500px;
+} */
+
+.img-size {
+	max-width: 100%;
+	max-height: auto;
+}
+figcaption {
+	position: absolute;
+	bottom: 2 rem;
+}
