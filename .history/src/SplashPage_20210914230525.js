@@ -10,13 +10,13 @@ function SplashPage() {
     <div>
       <Container>
         <Row className="mt-5">
-          <Col sm={{span: 5, offset: 8}}>
-            <h1 class="display-4">Welcome To</h1>
+          <Col>
+            <h1 class="display-3 text-end">Welcome To</h1>
           </Col>
         </Row>
         <Row>
-          <Col md={{span: 4, offset: 8}}>
-            <h1 class="display-1"><span style={{color: "darkgreen"}}>Bull</span><span style={{color: "darkred"}}>Trader</span></h1>
+          <Col>
+            <h1 class="display-1 text-end"><span style={{color: "darkgreen"}}>Bull</span><span style={{color: "darkred"}}>Trader</span></h1>
           </Col>
         </Row>
         <Row>

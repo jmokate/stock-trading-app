@@ -10,7 +10,7 @@ function SplashPage() {
     <div>
       <Container>
         <Row className="mt-5">
-          <Col sm={{span: 5, offset: 8}}>
+          <Col md={{span: 5, offset: 8}}>
             <h1 class="display-4">Welcome To</h1>
           </Col>
         </Row>
