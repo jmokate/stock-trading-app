@@ -42,8 +42,27 @@ function SplashPage() {
               Sign Up
             </Button>
 
-            <Signin show={show} onHide={handleClose} onClick={handleClose} />
-            
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton>
+                <Modal.Title>Sign Up</Modal.Title>
+              </Modal.Header>
+               <Modal.Body>
+                 <Form.Group>
+                   <Form.Label>Username: </Form.Label>
+                   <Form.Control type="text" placeholder="user input"/>
+                   <Form.Label>Password: </Form.Label>
+                   <Form.Control type="password" placeholder="password"/>
+                 </Form.Group>
+               </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                  <Button variant="primary" onClick={handleClose}>
+                    Save Changes
+                  </Button>
+                </Modal.Footer>
+            </Modal>
             <span> </span>
             <Button variant="secondary">Login</Button>
             

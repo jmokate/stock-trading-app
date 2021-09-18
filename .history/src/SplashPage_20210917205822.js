@@ -1,8 +1,7 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row, Col, Button, Modal, Form} from 'react-bootstrap';
-import Signin from "./Signin.js";
+import {Container, Row, Col, Button, Modal} from 'react-bootstrap';
 
 
 
@@ -38,12 +37,12 @@ function SplashPage() {
           <Row>
             <Col md={{offset: 9}} className="text-end">
             
-            <Button variant="secondary" onClick={handleShow}>
-              Sign Up
-            </Button>
-
-            <Signin show={show} onHide={handleClose} onClick={handleClose} />
-            
+            <Button variant="secondary" onclick={handleShow}>Sign Up</Button>
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                  Title for modal
+                </Modal.Header>
+                </Modal>
             <span> </span>
             <Button variant="secondary">Login</Button>
             

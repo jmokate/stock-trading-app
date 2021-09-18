@@ -1,8 +1,7 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row, Col, Button, Modal, Form} from 'react-bootstrap';
-import Signin from "./Signin.js";
+import {Container, Row, Col, Button, Modal} from 'react-bootstrap';
 
 
 
@@ -37,25 +36,42 @@ function SplashPage() {
           </Row>
           <Row>
             <Col md={{offset: 9}} className="text-end">
-            
-            <Button variant="secondary" onClick={handleShow}>
-              Sign Up
-            </Button>
-
-            <Signin show={show} onHide={handleClose} onClick={handleClose} />
-            
+            <Button variant="secondary" onclick={handleShow}>Sign Up</Button>
             <span> </span>
             <Button variant="secondary">Login</Button>
-            
             </Col>
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Sign Up</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Sign up and password here</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+              
+            </Modal.Footer>
+
+          </Modal>
           
-            
             
             
             
           </Row>
-          
-          
+          <Button variant="secondary" onclick={handleShow}>Sign Up</Button>
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Sign Up</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Sign up and password here</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+              
+            </Modal.Footer>
+
+          </Modal>
          
       </Container>
       

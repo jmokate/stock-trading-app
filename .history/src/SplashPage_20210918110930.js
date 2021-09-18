@@ -43,7 +43,6 @@ function SplashPage() {
             </Button>
 
             <Signin show={show} onHide={handleClose} onClick={handleClose} />
-            
             <span> </span>
             <Button variant="secondary">Login</Button>
             

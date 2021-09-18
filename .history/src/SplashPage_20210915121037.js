@@ -1,30 +1,23 @@
-import React, {useState} from "react";
+import React from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row, Col, Button, Modal, Form} from 'react-bootstrap';
-import Signin from "./Signin.js";
+import {Container, Row, Col, Button} from 'react-bootstrap';
 
 
 
 function SplashPage() {
-
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   return (
     <div>
       <Container fluid className="welcome-div">
         
           <Row className="mt-5">
-            <Col sm={{span: 5, offset: 6}}>
-              <h1 class="display-4 text-center">Welcome To</h1>
+            <Col sm={{span: 5, offset: 4}}>
+              <h1 class="display-4 text-end">Welcome To</h1>
             </Col>
           </Row>
           <Row>
-            <Col md={{span: 4, offset: 7}}>
-              <h1 class="display-1 text-center"><span style={{color: "darkgreen"}}>Bull</span><span style={{color: "darkred"}}>Trader</span></h1>
+            <Col md={{span: 4, offset: 5}}>
+              <h1 class="display-1 text-end"><span style={{color: "darkgreen"}}>Bull</span><span style={{color: "darkred"}}>Trader</span></h1>
             </Col>
           </Row>
           <Row>
@@ -37,24 +30,14 @@ function SplashPage() {
           </Row>
           <Row>
             <Col md={{offset: 9}} className="text-end">
-            
-            <Button variant="secondary" onClick={handleShow}>
-              Sign Up
-            </Button>
-
-            <Signin show={show} onHide={handleClose} onClick={handleClose} />
-            
+            <Button variant="secondary">Sign Up</Button>
             <span> </span>
             <Button variant="secondary">Login</Button>
-            
             </Col>
-          
-            
             
             
             
           </Row>
-          
           
          
       </Container>

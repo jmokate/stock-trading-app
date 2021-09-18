@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col, Button, Modal, Form} from 'react-bootstrap';
-import Signin from "./Signin.js";
 
 
 
@@ -42,8 +41,25 @@ function SplashPage() {
               Sign Up
             </Button>
 
-            <Signin show={show} onHide={handleClose} onClick={handleClose} />
-            
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton>
+                <Modal.Title>Modal heading</Modal.Title>
+              </Modal.Header>
+               <Modal.Body>
+                 <Form.Group>
+                   <Form.Label>Username: </Form.Label>
+                   <Form.Control type="text" placeholder="user input"/>
+                 </Form.Group>
+               </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                  <Button variant="primary" onClick={handleClose}>
+                    Save Changes
+                  </Button>
+                </Modal.Footer>
+            </Modal>
             <span> </span>
             <Button variant="secondary">Login</Button>
             
