@@ -1,15 +1,15 @@
-import React, {useState} from "react";
+import React from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row, Col, Button, Modal, Form} from 'react-bootstrap';
+import {Button, Modal, Form} from 'react-bootstrap';
 
-function Signin(props) {
-
+function Login(props) {
+  console.log(props)
   return (
           <>
             <Modal show={props.show} onHide={props.handleClose}>
               <Modal.Header closeButton>
-                <Modal.Title>Sign Up</Modal.Title>
+                <Modal.Title>Login</Modal.Title>
               </Modal.Header>
                <Modal.Body>
                  <Form.Group>
@@ -21,10 +21,10 @@ function Signin(props) {
                </Modal.Body>
                 <Modal.Footer>
                   <Button variant="secondary" onClick={props.handleClose}>
-                    Close
+                    Login
                   </Button>
                   <Button variant="primary" onClick={props.handleClose}>
-                    Save Changes
+                    Close
                   </Button>
                 </Modal.Footer>
             </Modal>
@@ -32,4 +32,4 @@ function Signin(props) {
   )
 }
 
-export default Signin;
+export default Login;

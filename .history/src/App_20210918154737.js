@@ -5,8 +5,8 @@ import Dashboard from './Dashboard.js'
 function App() {
   return (
     <div>
-      <Dashboard />
-      {/* <SplashPage /> */}
+     {/* <Dashboard /> */}
+      <SplashPage />
     </div>
   );
 }

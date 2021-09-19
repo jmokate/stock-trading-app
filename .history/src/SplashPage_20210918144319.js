@@ -2,20 +2,17 @@ import React, {useState} from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col, Button} from 'react-bootstrap';
-import Signup from "./Signup.js";
+import Signin from "./Signin.js";
 import Login from "./Login.js"
 
 
 
 function SplashPage() {
 
-  const [showSignup, setShowSignUp] = useState(false);
-  const handleSignupClose = () => setShowSignUp(false);
-  const handleSignupShow = () => setShowSignUp(true);
+  const [show, setShow] = useState(false);
 
-  const [showLogin, setShowLogin] = useState(false);
-  const handleLoginClose = () => setShowLogin(false);
-  const handleLoginShow = () => setShowLogin(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <div>
@@ -42,16 +39,20 @@ function SplashPage() {
           <Row>
             <Col md={{offset: 9}} className="text-end">
             
-            <Button variant="secondary" onClick={handleSignupShow}>
+            <Button variant="secondary" onClick={handleShow}>
               Sign Up
             </Button>
-            <Signup show={showSignup} handleClose={handleSignupClose} />
+            <Login show={show} handleClose={handleClose} />
             
             <span> </span>
-            <Button variant="secondary" onClick={handleLoginShow}>Login</Button>
-            
-            <Login show={showLogin} handleClose={handleLoginClose} />
+            <Button variant="secondary" onClick={handleShow}>Login</Button>
+            <Signin show={show} handleClose={handleClose} />
             </Col>
+          
+            
+            
+            
+            
           </Row>
           
           

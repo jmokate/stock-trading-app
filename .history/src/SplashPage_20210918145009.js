@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col, Button} from 'react-bootstrap';
-import Signup from "./Signup.js";
+import Signin from "./Signin.js";
 import Login from "./Login.js"
 
 
@@ -45,10 +45,10 @@ function SplashPage() {
             <Button variant="secondary" onClick={handleSignupShow}>
               Sign Up
             </Button>
-            <Signup show={showSignup} handleClose={handleSignupClose} />
+            <Signin show={showSignup} handleClose={handleSignupClose} />
             
             <span> </span>
-            <Button variant="secondary" onClick={handleLoginShow}>Login</Button>
+            <Button variant="secondary" onClick={handleSignupShow}>Login</Button>
             
             <Login show={showLogin} handleClose={handleLoginClose} />
             </Col>

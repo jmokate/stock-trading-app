@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Dashboard />
-      {/* <SplashPage /> */}
+      <SplashPage />
     </div>
   );
 }

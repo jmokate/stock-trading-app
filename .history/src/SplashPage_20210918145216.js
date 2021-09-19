@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col, Button} from 'react-bootstrap';
-import Signup from "./Signup.js";
+import Signup from "./Signin.js";
 import Login from "./Login.js"
 
 
